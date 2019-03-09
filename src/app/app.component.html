@@ -6,7 +6,7 @@
 
           <!-- The column with Image my_pic -->
           <div class="col-lg-4 col-md-5">
-            <img src="../assets/portfoliogrid/my_pic_5.jpg" alt="" height="743" width="755">
+            <img src="../assets/portfoliogrid/person1.jpg" alt="" height="743" width="755">
           </div>
 
           <!-- The column with all the content -->
@@ -57,19 +57,20 @@
 
                       <!-- HOME-RESUME-WORK-CONTACT Flex-Box-->
                       <div class="d-flex flex-row text-white align-items-stretch text-center">
-                        <div class="port-item p-4 bg-primary" (click)="isCollapsed($event, 'home')" data-toggle="collapse">
+                        <!--  5. routerLink]="['/home']" -->
+                        <div class="port-item p-4 bg-primary" [routerLink]="['/home']">
                           <i class="fas fa-home fa-2x block"></i>
                           <span class="d-none d-sm-block">Home</span>
                         </div>
-                        <div class="port-item p-4 bg-success" (click)="isCollapsed($event, 'resume')" data-toggle="collapse">
+                        <div class="port-item p-4 bg-success" [routerLink]="['/resume']" >
                           <i class="fas fa-graduation-cap fa-2x block"></i>
                           <span class="d-none d-sm-block">Resume</span>
                         </div>
-                        <div class="port-item p-4 bg-warning" (click)="isCollapsed($event, 'work')" data-toggle="collapse">
+                        <div class="port-item p-4 bg-warning" [routerLink]="['/work']" >
                           <i class="fas fa-folder-open fa-2x block"></i>
                           <span class="d-none d-sm-block">Work</span>
                         </div>
-                        <div class="port-item p-4 bg-danger" (click)="isCollapsed($event, 'contact')" data-toggle="collapse">
+                        <div class="port-item p-4 bg-danger" [routerLink]="['/contact']" >
                           <i class="fas fa-envelope fa-2x block"></i>
                           <span class="d-none d-sm-block">Contact</span>
                         </div>
@@ -82,30 +83,13 @@
           <!-- END HEADER -->
       </header>
 
+<div>
 
 
-            <!-- HOME -->
-            <app-home *ngIf="isCollapsedHome">
-            </app-home>
+  <router-outlet></router-outlet>
+      
 
-
-            <!-- RESUME -->
-            <app-resume *ngIf="isCollapsedResume">
-            </app-resume>
-
-
-            <!-- WORK -->
-            <app-work *ngIf="isCollapsedWork">
-            </app-work>
-
-
-
-
-            <!-- CONTACT -->
-            <app-contact *ngIf="isCollapsedContact">
-            </app-contact>
-
-
+          </div>
 
             <!-- FOOTER -->
             <footer id="main-footer" class="p-5 bg-dark text-white">
@@ -119,5 +103,3 @@
             </footer>
 
 </div>
-
-<router-outlet></router-outlet>
