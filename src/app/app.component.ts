@@ -17,6 +17,10 @@ export class AppComponent {
 
   title = 'Resume';
 
+  onClickSubmit(aux){
+
+    alert(aux);
+  }
 
   downloadResume() {
 
