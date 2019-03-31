@@ -17,9 +17,9 @@
           <div class="p-5 bg-dark text-white">
             <div class="d-flex flex-row justify-content-between align-items-center">
 
-              <h1 class="display-4">Tomas Mali</h1>
+              <h1 class="display-4 d-none d-md-block">Tomas Mali</h1>
 
-              <div class="d-none d-md-block">
+              <div>
                 <a href="https://www.linkedin.com/in/tomas-mali-777916170/" class="text-white">
                   <i class="fab fa-linkedin"></i>
                 </a>
@@ -123,20 +123,20 @@
           <div class="d-flex flex-row text-white align-items-stretch text-center">
             <!--  5. routerLink]="['/home']" -->
             <div class="port-item p-4 bg-primary" [routerLink]="['/home']">
-              <i class="fas fa-home fa-2x block"></i>
+              <i class="fas fa-home fa-lg block"></i>
               <span class="d-none d-sm-block">Home</span>
             </div>
             <div class="port-item p-4 bg-success" [routerLink]="['/resume']">
-              <i class="fas fa-graduation-cap fa-2x block"></i>
+              <i class="fas fa-graduation-cap fa-lg block"></i>
               <span class="d-none d-sm-block">Resume</span>
             </div>
             <div class="port-item p-4 bg-warning" [routerLink]="['/work']">
-              <i class="fas fa-folder-open fa-2x block"></i>
+              <i class="fas fa-folder-open fa-lg block"></i>
               <span class="d-none d-sm-block">Work</span>
             </div>
             <div class="port-item p-4 bg-danger" [routerLink]="['/contact']">
-              <i class="fas fa-envelope fa-2x block"></i>
-              <span class="d-none d-sm-block">Contact</span>
+              <i class="fas fa-envelope fa-lg block"></i>
+              <span class="d-none d-sm-block">Contact</span> 
             </div>
           </div>
         </div>
