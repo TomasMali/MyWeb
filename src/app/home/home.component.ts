@@ -11,7 +11,6 @@ import {  HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
 
   userName: string= "" ;
-  responseJson: string= "";
   response: any;
 
   constructor(public github: GithubService, public http: HttpClient) { 
@@ -32,7 +31,6 @@ export class HomeComponent implements OnInit {
   public search(){
       this.http
       .get('https://api.github.com/users/' + this.userName).subscribe((response)=> {
-        //this.responseJson = JSON.stringify(response)
         this.response = response;
   })
   }
