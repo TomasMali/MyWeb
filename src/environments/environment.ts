@@ -11,7 +11,8 @@ export const environment = {
     projectId: "user-service-b9b59",
     storageBucket: "",
     messagingSenderId: "578220639623"
-  }
+  },
+  themes: "https://bootswatch.com/4/sketchy/bootstrap.min.css"
 };
 
 /*

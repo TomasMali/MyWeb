@@ -19,6 +19,9 @@ export class AppComponent {
 validation : boolean= false;
 @ViewChild('btnClose') btnClose : ElementRef ;
 
+
+
+
   // 4.
   constructor(private router: Router,  db: AngularFireDatabase) {
    

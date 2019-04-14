@@ -35,4 +35,12 @@ export class HomeComponent implements OnInit {
   })
   }
 
+  public getUsers(){
+    this.http
+    .get('http://localhost:3000/users').subscribe((response)=> {
+      console.log(response)
+      this.response = response;
+})
+  }
+
 }
