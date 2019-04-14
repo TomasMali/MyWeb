@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm start | node src/index.js ",
+    "start": "node src/index.js ",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --prod",
+    "postinstall": "ng build --prod | node src/index.js",
     "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript"
   },
   "private": true,
