@@ -27,7 +27,7 @@ const bodyparser = require('body-parser');
 app.use(bodyparser.json());
 
 
-app.listen(3000, () => console.log('Express server is running in port 3000'));
+app.listen(process.env.PORT || 5000, () => console.log('Express server is running in port 5000'));
 
 
 var allowCrossDomain = function (req, res, next) {
