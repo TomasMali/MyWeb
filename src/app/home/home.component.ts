@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
 
   public getUsers(){
     this.http
-    .get('http://localhost:5000/users').subscribe((response)=> {
+    .get('https://resttomas.herokuapp.com/users').subscribe((response)=> {
       console.log(response)
       this.response = response;
 })
