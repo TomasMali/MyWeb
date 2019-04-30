@@ -24,7 +24,6 @@ validation : boolean= false;
 
   // 4.
   constructor(private router: Router,  db: AngularFireDatabase) {
-   
     db.list('/user').valueChanges().subscribe(user => {
       this.user_name = user
       console.log("valore: " + this.user_name)
@@ -35,12 +34,8 @@ validation : boolean= false;
   isValid(username, pass){
 
     for(let  i = 0 ; i < this.user_name.length ; i++){
-
-      
-      
-
-      console.log("Username is: " + this.user_name[i].username)
-     console.log("Password is: " + this.user_name[i].password)
+     // console.log("Username is: " + this.user_name[i].username)
+     // console.log("Password is: " + this.user_name[i].password)
     }
 
   }
