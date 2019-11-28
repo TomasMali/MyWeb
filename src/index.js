@@ -37,6 +37,7 @@ var allowCrossDomain = function (req, res, next) {
     next();
 }
 
+
 var config = {
     sql: 'SELECT * FROM users',
     timeout: 40000

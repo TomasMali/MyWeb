@@ -15,6 +15,13 @@ export class HomeComponent implements OnInit {
 
   constructor(public github: GithubService, public http: HttpClient) { 
 
+    localStorage.setItem("nome" , "tomas")
+    localStorage.setItem("cognome" , "mali")
+
+    sessionStorage.setItem("Nome", "Tomas")
+    sessionStorage.setItem("Cognome","Mali")
+    
+
   }
 
 
