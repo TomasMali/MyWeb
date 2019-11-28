@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/temaOne'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/temaOne/index.php'));
+  res.sendFile(path.join(__dirname + '/dist/temaOne/index.html'));
 });
 
 // default Heroku port
